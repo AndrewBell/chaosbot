@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2014 8:44:40 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.recursivechaos.chaosbot.hibernate.objects.EventLog" table="EVENT_LOG">
+        <id name="eventID" type="int">
+            <column name="EVENT_ID" />
+        </id>
+        <property name="sqltimestamp" type="java.sql.Timestamp">
+            <column name="EVENT_TIMESTAMP" />
+        </property>
+        <property name="nick" type="java.lang.String">
+            <column name="EVENT_NICK" />
+        </property>
+        <property name="message" type="java.lang.String">
+            <column name="EVENT_MESSAGE" />
+        </property>
+        <property name="channel" type="java.lang.String">
+            <column name="EVENT_CHANNEL" />
+        </property>
+        <property name="bot" type="java.lang.String">
+            <column name="EVENT_BOT" />
+        </property>
+        <property name="eventType" type="java.lang.String">
+            <column name="EVENT_TYPE" />
+        </property>
+    </class>
+</hibernate-mapping>

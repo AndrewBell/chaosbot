@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.recursivechaos.chaosbot.hibernate.objects.ChatUser" table="USER">
+        <id name="userID" type="int">
+            <column name="USER_ID" />
+        </id>
+        <property name="nickname" type="java.lang.String">
+            <column name="USER_NICK" />
+        </property>
+    </class>
+</hibernate-mapping>
